@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>焚香</title>
+    <link rel="stylesheet" href="styles/incense.css">
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands@0.4.1646424915/hands.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils@0.3/camera_utils.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils@0.3/drawing_utils.js"></script>
+</head>
+<body>
+    <div class="guide-text">请抬手参拜，焚香致敬六尊神明</div>
+    <div class="continue-text">参拜完成，继续向前</div>
+    <div class="scene">
+        <img src="images/3333.gif" alt="effect" class="gif-overlay">
+    </div>
+    <div class="image5"></div>
+    <div class="carousel-container">
+        <div class="carousel-item" style="background-image: url('images/41.png');"></div>
+        <div class="carousel-item" style="background-image: url('images/42.png');"></div>
+        <div class="carousel-item" style="background-image: url('images/43.png');"></div>
+        <div class="carousel-item" style="background-image: url('images/44.png');"></div>
+        <div class="carousel-item" style="background-image: url('images/45.png');"></div>
+        <div class="carousel-item" style="background-image: url('images/46.png');"></div>
+    </div>
+    <div class="nav-arrow left">←</div>
+    <div class="nav-arrow right">→</div>
+    <div class="hand-container">
+        <video class="input_video"></video>
+        <img class="effect-video" src="images/33.gif" style="display: none;">
+        <div class="canvas-container">
+            <canvas class="output_canvas"></canvas>
+        </div>
+    </div>
+    <script src="js/incense.js"></script>
+    <script src="js/handTracking.js" defer></script>
+</body>
+</html> 
